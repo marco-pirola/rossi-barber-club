@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rossi Barber Club a Bergamo: taglio, barba e styling di alta qualità. Prenota il tuo appuntamento.">
+  <title>Rossi Barber Club — Bergamo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Salta al contenuto</a>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="logo" href="#home" aria-label="Rossi Barber Club — Home">
+        <span class="logo-mark" aria-hidden="true">
+          <span class="logo-pole"></span>
+        </span>
+        <span class="logo-text">
+          <span class="logo-name">Rossi</span>
+          <span class="logo-sub">Barber Club</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="primary-nav" aria-label="Navigazione principale">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#servizi">Servizi</a></li>
+          <li><a href="#chi-siamo">Chi siamo</a></li>
+          <li><a href="#galleria">Galleria</a></li>
+          <li><a href="#recensioni">Recensioni</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn-gold header-cta" href="#contatti">Prenota</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Apri menu">
+        <span class="menu-bar" aria-hidden="true"></span>
+        <span class="menu-bar" aria-hidden="true"></span>
+        <span class="menu-bar" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-backdrop" hidden></div>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Bergamo · Dal 2014</p>
+          <h1>Il tuo stile.<br>Il nostro mestiere.</h1>
+          <p class="lead">
+            Un atelier di barberia nel cuore di Bergamo: tagli precisi, barbe scolpite
+            e un’attenzione artigianale a ogni dettaglio. Qui il tempo rallenta e lo stile prende forma.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#contatti">Prenota il tuo appuntamento</a>
+            <a class="btn btn-ghost" href="#servizi">Scopri i servizi</a>
+          </div>
+          <dl class="hero-meta">
+            <div>
+              <dt>Indirizzo</dt>
+              <dd>Via Broseta 48, Bergamo</dd>
+            </div>
+            <div>
+              <dt>Orari</dt>
+              <dd>Lun–Sab, da 09:00</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="shop-frame">
+            <div class="shop-frame-inner">
+              <div class="barber-pole">
+                <div class="pole-cap"></div>
+                <div class="pole-body"></div>
+                <div class="pole-cap pole-cap-bottom"></div>
+              </div>
+              <div class="hero-panel">
+                <span class="panel-kicker">Est. 2014</span>
+                <span class="panel-word">CUT</span>
+                <span class="panel-word italic">SHAVE</span>
+                <span class="panel-word">STYLE</span>
+                <span class="panel-line"></span>
+                <span class="panel-city">Bergamo</span>
+              </div>
+              <div class="gold-arc"></div>
+              <div class="chair-block">
+                <div class="chair-back"></div>
+                <div class="chair-seat"></div>
+                <div class="chair-base"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="servizi">
+      <div class="section-intro reveal">
+        <p class="eyebrow">Servizi</p>
+        <h2>Il rituale, a misura di te.</h2>
+        <p>Quattro proposte chiare. Ogni servizio include consulenza, finitura e un passaggio di styling.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <span class="icon-scissors"></span>
+          </div>
+          <h3>Taglio</h3>
+          <p>Taglio su misura, fade o classico, con attenzione alla forma del viso e alla texture dei capelli.</p>
+          <div class="service-meta">
+            <span class="price">€25</span>
+            <span class="duration">30 min</span>
+          </div>
+          <button class="btn btn-outline" type="button" data-book="Taglio">Prenota Taglio</button>
+        </article>
+
+        <article class="service-card reveal featured">
+          <p class="badge">Più richiesto</p>
+          <div class="service-icon" aria-hidden="true">
+            <span class="icon-combo"></span>
+          </div>
+          <h3>Taglio + Barba</h3>
+          <p>Il servizio completo: taglio preciso e barba modellata a rasoio, per un profilo netto e curato.</p>
+          <div class="service-meta">
+            <span class="price">€35</span>
+            <span class="duration">45 min</span>
+          </div>
+          <button class="btn btn-gold" type="button" data-book="Taglio + Barba">Prenota Taglio + Barba</button>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <span class="icon-razor"></span>
+          </div>
+          <h3>Barba</h3>
+          <p>Definizione dei contorni, rasatura a caldo e olio nutriente. Un trattamento breve, ma deciso.</p>
+          <div class="service-meta">
+            <span class="price">€18</span>
+            <span class="duration">20 min</span>
+          </div>
+          <button class="btn btn-outline" type="button" data-book="Barba">Prenota Barba</button>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <span class="icon-comb"></span>
+          </div>
+          <h3>Styling</h3>
+          <p>Finish professionale per un evento o per la giornata: texture, volume e prodotto su misura.</p>
+          <div class="service-meta">
+            <span class="price">€15</span>
+            <span class="duration">15 min</span>
+          </div>
+          <button class="btn btn-outline" type="button" data-book="Styling">Prenota Styling</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about" id="chi-siamo">
+      <div class="about-grid">
+        <div class="about-visual reveal" aria-hidden="true">
+          <div class="about-composition">
+            <div class="comp-stripe"></div>
+            <div class="comp-frame">
+              <div class="comp-inner">
+                <span class="comp-year">10+</span>
+                <span class="comp-label">anni in bottega</span>
+              </div>
+            </div>
+            <div class="comp-quote">
+              “Ogni taglio è una conversazione.”
+            </div>
+            <div class="comp-tools">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-copy reveal">
+          <p class="eyebrow">Chi siamo</p>
+          <h2>Una bottega contemporanea, con mani da artigiani.</h2>
+          <p>
+            Rossi Barber Club nasce a Bergamo dall’incontro tra tradizione italiana e tecniche moderne.
+            Non inseguiamo le mode: le interpretiamo, adattandole al viso, al carattere e allo stile di chi siede sulla poltrona.
+          </p>
+          <p>
+            Ogni appuntamento inizia con un ascolto vero. Poi arrivano precisione, prodotti selezionati
+            e un ambiente accogliente — luce calda, musica bassa, niente fretta.
+          </p>
+          <ul class="about-points">
+            <li>Attenzione al millimetro, dal fade alla linea della barba</li>
+            <li>Tecniche contemporanee su fondamenta classiche</li>
+            <li>Consulenza di stile personalizzata, ogni volta</li>
+            <li>Atmosfera riservata, pensata per stare bene</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="galleria">
+      <div class="section-intro reveal">
+        <p class="eyebrow">Galleria</p>
+        <h2>Forme, texture, carattere.</h2>
+        <p>Uno sguardo al lavoro in bottega: tagli netti, barbe definite, finiture che restano.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="gallery-card g-tall reveal" data-style="fade">
+          <figcaption>
+            <span>Skin fade</span>
+            <span>Precision cut</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card reveal" data-style="beard">
+          <figcaption>
+            <span>Barba scolpita</span>
+            <span>Hot towel</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card reveal" data-style="classic">
+          <figcaption>
+            <span>Side part</span>
+            <span>Classic</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card g-wide reveal" data-style="texture">
+          <figcaption>
+            <span>Texture crop</span>
+            <span>Modern</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card reveal" data-style="razor">
+          <figcaption>
+            <span>Straight razor</span>
+            <span>Finish</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card reveal" data-style="studio">
+          <figcaption>
+            <span>La bottega</span>
+            <span>Bergamo</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section benefits" id="perche-noi">
+      <div class="section-intro reveal">
+        <p class="eyebrow">Perché scegliere noi</p>
+        <h2>Quattro ragioni, una sola standard.</h2>
+      </div>
+
+      <div class="benefit-grid">
+        <article class="benefit-card reveal">
+          <span class="benefit-num">01</span>
+          <h3>Precisione</h3>
+          <p>Linee pulite, simmetrie controllate, fade che sparisce senza strappi. Il mestiere si vede da vicino.</p>
+        </article>
+        <article class="benefit-card reveal">
+          <span class="benefit-num">02</span>
+          <h3>Stile personale</h3>
+          <p>Niente tagli copiati. Costruiamo un look che ti assomiglia e che sai mantenere anche a casa.</p>
+        </article>
+        <article class="benefit-card reveal">
+          <span class="benefit-num">03</span>
+          <h3>Prodotti premium</h3>
+          <p>Cere, oli e balsami selezionati: performance alta, profumazioni discrete, rispetto del cuoio capelluto.</p>
+        </article>
+        <article class="benefit-card reveal">
+          <span class="benefit-num">04</span>
+          <h3>Atmosfera rilassata</h3>
+          <p>Un luogo raccolto, senza attese caotiche. Entri, ti siedi, esci con la testa a posto.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section testimonials" id="recensioni">
+      <div class="section-intro reveal">
+        <p class="eyebrow">Recensioni</p>
+        <h2>Parola di chi torna.</h2>
+      </div>
+
+      <div class="testimonial-grid">
+        <blockquote class="testimonial reveal">
+          <p>“Finalmente un barbiere che ascolta. Il fade è pulito, la barba è definita e non ho mai la sensazione di essere uno dei tanti.”</p>
+          <footer>
+            <cite>Marco Rota</cite>
+            <span>Cliente dal 2019 · Città Alta</span>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial reveal">
+          <p>“Porto mio figlio da due anni. Ambiente serio ma accogliente, spiegazioni chiare, taglio che dura. Per noi è un appuntamento fisso.”</p>
+          <footer>
+            <cite>Giulia Fumagalli</cite>
+            <span>Cliente dal 2022 · Borgo Palazzo</span>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial reveal">
+          <p>“Il Taglio + Barba vale ogni euro. Prodotto giusto, mani sicure, e quella pausa di 45 minuti che ti sistema la settimana.”</p>
+          <footer>
+            <cite>Alessandro Gotti</cite>
+            <span>Cliente dal 2016 · Seriate</span>
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section hours" id="orari">
+      <div class="hours-panel reveal">
+        <div class="hours-intro">
+          <p class="eyebrow">Orari</p>
+          <h2>Siamo aperti quando serve, chiusi quando riposiamo.</h2>
+          <p>Consigliamo la prenotazione, soprattutto il venerdì sera e il sabato mattina.</p>
+        </div>
+        <table class="hours-table">
+          <caption class="visually-hidden">Orari di apertura</caption>
+          <tbody>
+            <tr>
+              <th scope="row">Lunedì</th>
+              <td>09:00–19:30</td>
+            </tr>
+            <tr>
+              <th scope="row">Martedì</th>
+              <td>09:00–19:30</td>
+            </tr>
+            <tr>
+              <th scope="row">Mercoledì</th>
+              <td>09:00–19:30</td>
+            </tr>
+            <tr>
+              <th scope="row">Giovedì</th>
+              <td>09:00–20:00</td>
+            </tr>
+            <tr>
+              <th scope="row">Venerdì</th>
+              <td>09:00–20:00</td>
+            </tr>
+            <tr>
+              <th scope="row">Sabato</th>
+              <td>09:00–18:00</td>
+            </tr>
+            <tr class="closed">
+              <th scope="row">Domenica</th>
+              <td>Chiuso</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="section-intro reveal">
+        <p class="eyebrow">Domande</p>
+        <h2>Prima di sederti.</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <h3>
+            <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-1" id="faq-btn-1">
+              Serve prenotare?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="faq-panel" id="faq-1" role="region" aria-labelledby="faq-btn-1" hidden>
+            <p>Sì, per garantirti il barbiere e l’orario giusti. Accettiamo walk-in solo se c’è un varco reale, senza far attendere chi ha prenotato.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <h3>
+            <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-2" id="faq-btn-2">
+              Quanto dura il primo appuntamento?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="faq-panel" id="faq-2" role="region" aria-labelledby="faq-btn-2" hidden>
+            <p>Il primo incontro include qualche minuto in più di consulenza. Per un Taglio + Barba conta circa 50 minuti; per un taglio semplice restiamo sui 30–35.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <h3>
+            <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-3" id="faq-btn-3">
+              Lavorate anche con capelli ricci o afro?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="faq-panel" id="faq-3" role="region" aria-labelledby="faq-btn-3" hidden>
+            <p>Sì. Adattiamo tecnica e prodotto alla struttura del capello. Segnalalo in prenotazione così prepariamo il tempo corretto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contatti">
+      <div class="contact-panel reveal">
+        <div class="contact-copy">
+          <p class="eyebrow">Contatti</p>
+          <h2>Prenota il tuo appuntamento</h2>
+          <p>
+            Scrivici o chiamaci: confermiamo lo slot entro poche ore. Per urgenze, il telefono è il canale più rapido.
+          </p>
+          <address>
+            <strong>Rossi Barber Club</strong><br>
+            Via Broseta 48<br>
+            24122 Bergamo, Italia
+          </address>
+          <p>
+            <a href="tel:+390351234567">+39 035 123 4567</a><br>
+            <a href="mailto:prenota@rossibarberclub.it">prenota@rossibarberclub.it</a>
+          </p>
+          <div class="contact-actions">
+            <a class="btn btn-gold" href="tel:+390351234567">Chiama ora</a>
+            <a class="btn btn-ghost" href="mailto:prenota@rossibarberclub.it?subject=Prenotazione%20Rossi%20Barber%20Club">Scrivi una email</a>
+          </div>
+        </div>
+
+        <form class="booking-form" id="booking-form" novalidate>
+          <p class="form-title">Richiedi uno slot</p>
+          <div class="form-row">
+            <label for="name">Nome</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-row">
+            <label for="phone">Telefono</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+          </div>
+          <div class="form-row">
+            <label for="service">Servizio</label>
+            <select id="service" name="service" required>
+              <option value="">Seleziona</option>
+              <option>Taglio</option>
+              <option>Taglio + Barba</option>
+              <option>Barba</option>
+              <option>Styling</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="note">Nota (opzionale)</label>
+            <textarea id="note" name="note" rows="3" placeholder="Giorno preferito, barbiere, dettagli sul taglio…"></textarea>
+          </div>
+          <button class="btn btn-gold btn-full" type="submit">Invia richiesta</button>
+          <p class="form-hint">Questa è una richiesta: ti confermiamo disponibilità via telefono o email.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="#home">
+          <span class="logo-mark" aria-hidden="true"><span class="logo-pole"></span></span>
+          <span class="logo-text">
+            <span class="logo-name">Rossi</span>
+            <span class="logo-sub">Barber Club</span>
+          </span>
+        </a>
+        <p>Barberia premium a Bergamo. Taglio, barba, stile — con calma e precisione.</p>
+      </div>
+
+      <nav aria-label="Footer">
+        <p class="footer-heading">Navigazione</p>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#servizi">Servizi</a></li>
+          <li><a href="#chi-siamo">Chi siamo</a></li>
+          <li><a href="#galleria">Galleria</a></li>
+          <li><a href="#recensioni">Recensioni</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <p class="footer-heading">Contatti</p>
+        <address>
+          Via Broseta 48<br>
+          24122 Bergamo<br>
+          <a href="tel:+390351234567">+39 035 123 4567</a><br>
+          <a href="mailto:prenota@rossibarberclub.it">prenota@rossibarberclub.it</a>
+        </address>
+      </div>
+
+      <div>
+        <p class="footer-heading">Orari</p>
+        <p>Lun–Mer 09:00–19:30<br>Gio–Ven 09:00–20:00<br>Sab 09:00–18:00<br>Dom chiuso</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Rossi Barber Club. Tutti i diritti riservati.</p>
+      <p>Sito dimostrativo · attività fittizia</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
